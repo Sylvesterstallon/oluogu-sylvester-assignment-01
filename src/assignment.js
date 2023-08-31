@@ -16,11 +16,13 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
-    return sum
-}
-
-
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+    for (let i = 0; i <= destination; i++) {
+        sum += i;
+    };
+  return sum;
+};
+sumOfNumbersTo(10)
+ assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -38,6 +40,15 @@ function countEvenNumbersWithin(destination) {
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
+  for (let i=1; i<= destination; i++) {
+    if(i % 2 === 0) {
+      sum += i
+
+      arrayOfEvenNumbers.push(i) //Push all even numbers into the array above 
+    }
+  }
+  count =
+    arrayOfEvenNumbers.length //pass in the numbers of even numbers
 
     return {
         // property value shorthand
@@ -48,8 +59,8 @@ function countEvenNumbersWithin(destination) {
         arrayOfEvenNumbers
     };
 }
-
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+countEvenNumbersWithin(10)
+ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
